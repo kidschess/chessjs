@@ -16,7 +16,7 @@
 #LoadingBook {
 	position: absolute;
 	left: 0px;
-	top: 900px;	
+	top: 1200px;	
 }
 
 #CurrentFenDiv {
@@ -37,13 +37,13 @@
 
 #EngineOutput {
 	position: absolute;
+	top: 1200px;	
 	left: 600px;
-	top: 900px;	
 }
 
 #ThinkingImageDiv {
 	position: absolute;
-	top: 900px;
+	top: 1200px;
 	left: 600px;
 }
 
@@ -60,8 +60,8 @@
 
 .Square {
 	position: absolute;	
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 }
 
 .Light {
@@ -78,42 +78,41 @@
 
 .clickElement { cursor:pointer }
 
-.rank1 { top: 700px; }
-.rank2 { top: 600px; }
-.rank3 { top: 500px; }
-.rank4 { top: 400px; }
-.rank5 { top: 300px; }
-.rank6 { top: 200px; }
-.rank7 { top: 100px; }
+.rank1 { top: 840px; }
+.rank2 { top: 720px; }
+.rank3 { top: 600px; }
+.rank4 { top: 480px; }
+.rank5 { top: 360px; }
+.rank6 { top: 240px; }
+.rank7 { top: 120px; }
 .rank8 { top: 0px; }
 
 .file1 { left: 0px; }
-.file2 { left: 100px; }
-.file3 { left: 200px; }
-.file4 { left: 300px; }
-.file5 { left: 400px; }
-.file6 { left: 500px; }
-.file7 { left: 600px; }
-.file8 { left: 700px; }
+.file2 { left: 120px; }
+.file3 { left: 240px; }
+.file4 { left: 360px; }
+.file5 { left: 480px; }
+.file6 { left: 600px; }
+.file7 { left: 720px; }
+.file8 { left: 840px; }
 
-.rank8flip { top: 700px; }
-.rank7flip { top: 600px; }
-.rank6flip { top: 500px; }
-.rank5flip { top: 400px; }
-.rank4flip { top: 300px; }
-.rank3flip { top: 200px; }
-.rank2flip { top: 100px; }
+.rank8flip { top: 840px; }
+.rank7flip { top: 720px; }
+.rank6flip { top: 600px; }
+.rank5flip { top: 480px; }
+.rank4flip { top: 360px; }
+.rank3flip { top: 240px; }
+.rank2flip { top: 120px; }
 .rank1flip { top: 0px; }
 
 .file8flip { left: 0px; }
-.file7flip { left: 100px; }
-.file6flip { left: 200px; }
-.file5flip { left: 300px; }
-.file4flip { left: 400px; }
-.file3flip { left: 400px; }
-.file2flip { left: 600px; }
-.file1flip { left: 700px; }
-
+.file7flip { left: 120px; }
+.file6flip { left: 240px; }
+.file5flip { left: 360px; }
+.file4flip { left: 480px; }
+.file3flip { left: 600px; }
+.file2flip { left: 720px; }
+.file1flip { left: 840px; }
 
 
 
