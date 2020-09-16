@@ -1,6 +1,6 @@
 #FenInDiv {
 	position: absolute;
-	top: 1200px;
+	top: 1700px;
 	left: 60px;
 }
 
@@ -21,8 +21,9 @@
 }
 
 #CurrentFenDiv {
-	position: relative;
+	position: absolute;
 	left: 60px;
+	top: 1800px;
 	margin-top: 40px;
 }
 
