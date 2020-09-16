@@ -1,5 +1,6 @@
 #FenInDiv {
-	position: relative;
+	position: absolute;
+	top: 1200px;
 	left: 60px;
 }
 
