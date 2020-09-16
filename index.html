@@ -15,11 +15,9 @@
 			<input type="text" id="fenIn" />		
 			<button type="button" id="SetFen" >Set Position</button>	
 		</div>	
-		<div id="ThinkingImageDiv">	
-		</div>
 		<div id="Board">
 		</div>
-		<div id="CurrentFenDiv"  visible="false" >
+		<div id="CurrentFenDiv"  display="" >
 			<span id="currentFenSpan"></span>		
 		</div>	
 		<div id="EngineOutput">Thinking Time: <br/>
@@ -34,7 +32,9 @@
 			<button type="button" id="SearchButton">Move Now</button>
 			<button type="button" id="NewGameButton">New</button>
 			<button type="button" id="FlipButton">Flip</button>
-			<button type="button" id="TakeButton">Take Back</button></br></br></br>
+			<button type="button" id="TakeButton">Take Back</button>
+			<div id="ThinkingImageDiv">	</div>
+			</br></br></br>
 			<span id="BestOut">BestMove:</span>
 			<span id="DepthOut">Depth:</span>
 			<span id="ScoreOut">Score:</span>
