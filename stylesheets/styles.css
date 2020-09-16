@@ -1,7 +1,8 @@
 #FenInDiv {
 	position: absolute;
-	top: 1700px;
+	top: 1000px;
 	left: 60px;
+	display: none;
 }
 
 #fenIn { 
@@ -17,14 +18,16 @@
 #LoadingBook {
 	position: absolute;
 	left: 0px;
-	top: 1200px;	
+	top: 100px;	
+	display: none;
 }
 
 #CurrentFenDiv {
 	position: absolute;
 	left: 60px;
-	top: 1800px;
+	top: 1000px;
 	margin-top: 40px;
+	display: none;
 }
 
 #Board {
