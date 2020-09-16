@@ -15,9 +15,8 @@
 
 #LoadingBook {
 	position: absolute;
-	left: 600px;
-	top: 150px;	
-	
+	left: 0px;
+	top: 900px;	
 }
 
 #CurrentFenDiv {
@@ -39,12 +38,12 @@
 #EngineOutput {
 	position: absolute;
 	left: 600px;
-	top: 250px;	
+	top: 900px;	
 }
 
 #ThinkingImageDiv {
 	position: absolute;
-	top: 140px;
+	top: 900px;
 	left: 600px;
 }
 
