@@ -5,6 +5,8 @@ UserMove.to = SQUARES.NO_SQ;
 var MirrorFiles = [ FILES.FILE_H, FILES.FILE_G, FILES.FILE_F, FILES.FILE_E, FILES.FILE_D, FILES.FILE_C, FILES.FILE_B, FILES.FILE_A ];
 var MirrorRanks = [ RANKS.RANK_8, RANKS.RANK_7, RANKS.RANK_6, RANKS.RANK_5, RANKS.RANK_4, RANKS.RANK_3, RANKS.RANK_2, RANKS.RANK_1 ];
 
+var SQ_SIZE = 100
+
 function MIRROR120(sq) {
 	var file = MirrorFiles[FilesBrd[sq]];
 	var rank = MirrorRanks[RanksBrd[sq]];
@@ -43,7 +45,7 @@ function CheckResult() {
 	console.log('Checking end of game');
 	GenerateMoves();
       
-    var MoveNum = 0;
+   var MoveNum = 0;
 	var found = 0;
 	for(MoveNum = brd_moveListStart[brd_ply]; MoveNum < brd_moveListStart[brd_ply + 1]; ++MoveNum)  {	
        
@@ -83,8 +85,8 @@ function ClickedSquare(pageX, pageY) {
 	var pageX = Math.floor(pageX);
 	var pageY = Math.floor(pageY);
 	
-	var file = Math.floor((pageX-workedX) / 60);
-	var rank = 7 - Math.floor((pageY-workedY) / 60);
+	var file = Math.floor((pageX-workedX) / SQ_SIZE);
+	var rank = 7 - Math.floor((pageY-workedY) / SQ_SIZE);
 	
 	var sq = FR2SQ(file,rank);
 	
@@ -170,7 +172,7 @@ function RemoveGUIPiece(sq) {
 	//console.log("remove on:" + PrSq(sq));
 	$( ".Piece" ).each(function( index ) {
 		 //console.log( "Picture:" + index + ": " + $(this).position().top + "," + $(this).position().left );
-		 if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/60)) && (FilesBrd[sq] == Math.round($(this).position().left/60)) ){		
+		 if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/SQ_SIZE)) && (FilesBrd[sq] == Math.round($(this).position().left/SQ_SIZE)) ){		
 		 	//console.log( "Picture:" + index + ": " + $(this).position().top + "," + $(this).position().left );	
 			$(this).remove();			
 		 }
@@ -229,7 +231,7 @@ function MoveGUIPiece(move) {
 	
 	$( ".Piece" ).each(function( index ) {
      //console.log( "Picture:" + index + ": " + $(this).position().top + "," + $(this).position().left );
-     if( (RanksBrd[flippedFrom] == 7 - Math.round($(this).position().top/60)) && (FilesBrd[flippedFrom] == Math.round($(this).position().left/60)) ){
+     if( (RanksBrd[flippedFrom] == 7 - Math.round($(this).position().top/SQ_SIZE)) && (FilesBrd[flippedFrom] == Math.round($(this).position().left/SQ_SIZE)) ){
      	//console.log("Setting pic ff:" + FilesBrd[from] + " rf:" + RanksBrd[from] + " tf:" + FilesBrd[to] + " rt:" + RanksBrd[to]);
      	$(this).removeClass();
      	$(this).addClass("Piece clickElement " + rankName + " " + fileName);     
@@ -271,7 +273,7 @@ function DeselectSq(sq) {
 	}
 	
 	$( ".Square" ).each(function( index ) {     
-     if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/60)) && (FilesBrd[sq] == Math.round($(this).position().left/60)) ){     	
+     if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/SQ_SIZE)) && (FilesBrd[sq] == Math.round($(this).position().left/SQ_SIZE)) ){     	
      	$(this).removeClass('SqSelected');    
      }
     });
@@ -284,8 +286,8 @@ function SetSqSelected(sq) {
 	}
 	
 	$( ".Square" ).each(function( index ) {    
-	//console.log("Looking Sq Selected RanksBrd[sq] " + RanksBrd[sq] + " FilesBrd[sq] " + FilesBrd[sq] + " position " + Math.round($(this).position().left/60) + "," + Math.round($(this).position().top/60));	
-     if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/60)) && (FilesBrd[sq] == Math.round($(this).position().left/60)) ){   
+	//console.log("Looking Sq Selected RanksBrd[sq] " + RanksBrd[sq] + " FilesBrd[sq] " + FilesBrd[sq] + " position " + Math.round($(this).position().left/SQ_SIZE) + "," + Math.round($(this).position().top/SQ_SIZE));	
+     if( (RanksBrd[sq] == 7 - Math.round($(this).position().top/SQ_SIZE)) && (FilesBrd[sq] == Math.round($(this).position().left/SQ_SIZE)) ){   
 		//console.log("Setting Selected Sq");
      	$(this).addClass('SqSelected');    
      }
