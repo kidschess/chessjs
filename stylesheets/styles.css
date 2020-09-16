@@ -4,8 +4,8 @@
 }
 
 #fenIn { 
- width: 480px;
- left: 60px;
+  width: 480px;
+  left: 60px;
 }
 
 #versionLink {
@@ -37,8 +37,8 @@
 
 #EngineOutput {
 	position: absolute;
-	top: 1200px;	
-	left: 600px;
+	top: 1100px;	
+	left: 100px;
 }
 
 #ThinkingImageDiv {

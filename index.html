@@ -16,14 +16,12 @@
 			<button type="button" id="SetFen">Set Position</button>	
 		</div>	
 		<div id="ThinkingImageDiv">	
-			
 		</div>
 		<div id="Board">
 		</div>
 		<div id="CurrentFenDiv">
 			<span id="currentFenSpan"></span>		
 		</div>	
-		<span id="LoadingBook">Loading book, please wait....</span><br/>
 		<div id="EngineOutput">Thinking Time: <br/>
 			<select id="ThinkTimeChoice">
 				<option value="1">1s</option>
@@ -32,19 +30,19 @@
 				<option value="6">6s</option>
 				<option value="8">8s</option>
 				<option value="10">10s</option>
-			</select><br/><br/><br/>
-	
+			</select>
+			<button type="button" id="SearchButton">Move Now</button>
+			<button type="button" id="NewGameButton">New Game</button>
+			<button type="button" id="FlipButton">Flip Board</button>
+			<button type="button" id="TakeButton">Take Back</button></br></br></br>
 			<span id="BestOut">BestMove:</span><br/>
 			<span id="DepthOut">Depth:</span><br/>
 			<span id="ScoreOut">Score:</span><br/>
 			<span id="NodesOut">Nodes:</span><br/>
 			<span id="OrderingOut">Ordering:</span><br/>
 			<span id="TimeOut">Time:</span><br/><br/>
-			<button type="button" id="SearchButton">Move Now</button><br/>
-			<button type="button" id="NewGameButton">New Game</button><br/>
-			<button type="button" id="FlipButton">Flip Board</button><br/><br/>
-			<button type="button" id="TakeButton">Take Back</button><br/><br/><br/>
 			<span id="GameStatus"></span>
+			<span id="LoadingBook">Loading book, please wait....</span>
 		</div>
 		<script src="js/jquery-1.10.1.min.js"></script>
 		<!--<script src="js/all.js"></script>-->
