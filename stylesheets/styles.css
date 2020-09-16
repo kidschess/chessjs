@@ -1,0 +1,123 @@
+#FenInDiv {
+	position: relative;
+	left: 60px;
+}
+
+#fenIn { 
+ width: 480px;
+ left: 60px;
+}
+
+#versionLink {
+	margin-left:10px;
+	font-size:small;
+}
+
+#LoadingBook {
+	position: absolute;
+	left: 600px;
+	top: 150px;	
+	
+}
+
+#CurrentFenDiv {
+	position: relative;
+	left: 60px;
+	margin-top: 40px;
+}
+
+#Board {
+	position: relative;
+	left: 60px;
+	top: 20px;
+	width: 480px;
+	height: 480px;
+	border-style:solid;
+    border-width:2px;
+}
+
+#EngineOutput {
+	position: absolute;
+	left: 600px;
+	top: 250px;	
+}
+
+#ThinkingImageDiv {
+	position: absolute;
+	top: 140px;
+	left: 600px;
+}
+
+#ThinkingPng {
+	width: 50px;
+	height: 30px;
+}
+
+
+
+.Piece {
+	position: absolute;
+}
+
+.Square {
+	position: absolute;	
+	width: 60px;
+	height: 60px;
+}
+
+.Light {
+	background-color:#5fbcd3;
+}
+
+.Dark {
+	background-color:#afdde9;
+}
+
+.SqSelected {
+	background-color:#216778;
+}
+
+.clickElement { cursor:pointer }
+
+.rank1 { top: 420px; }
+.rank2 { top: 360px; }
+.rank3 { top: 300px; }
+.rank4 { top: 240px; }
+.rank5 { top: 180px; }
+.rank6 { top: 120px; }
+.rank7 { top: 60px; }
+.rank8 { top: 0px; }
+
+.file1 { left: 0px; }
+.file2 { left: 60px; }
+.file3 { left: 120px; }
+.file4 { left: 180px; }
+.file5 { left: 240px; }
+.file6 { left: 300px; }
+.file7 { left: 360px; }
+.file8 { left: 420px; }
+
+.rank8flip { top: 420px; }
+.rank7flip { top: 360px; }
+.rank6flip { top: 300px; }
+.rank5flip { top: 240px; }
+.rank4flip { top: 180px; }
+.rank3flip { top: 120px; }
+.rank2flip { top: 60px; }
+.rank1flip { top: 0px; }
+
+.file8flip { left: 0px; }
+.file7flip { left: 60px; }
+.file6flip { left: 120px; }
+.file5flip { left: 180px; }
+.file4flip { left: 240px; }
+.file3flip { left: 300px; }
+.file2flip { left: 360px; }
+.file1flip { left: 420px; }
+
+
+
+
+
+
+
