@@ -32,12 +32,12 @@
 
 #Board {
 	position: relative;
-	left: 20px;
-	top: 20px;
+	left: 0px;
+	top: 0px;
 	width: 960px;
 	height: 960px;
 	border-style:solid;
-    border-width:2px;
+  border-width:2px;
 }
 
 #EngineOutput {
